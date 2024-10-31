@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Calculator</h1>
+        <input id="textbox" type="text" readonly>
+        <div class="buttons">
+        <button onclick="textbox_num = textbox_num + '1';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn1">1</button>
+        <button onclick="textbox_num = textbox_num + '2';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn2">2</button>
+        <button onclick="textbox_num = textbox_num + '3';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn3">3</button>
+        <button onclick="textbox_num = textbox_num + '4';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn4">4</button>
+        <button onclick="textbox_num = textbox_num + '5';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn5">5</button>
+        <button onclick=" textbox_num = textbox_num + '6';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn6">6</button>
+        <button onclick=" textbox_num = textbox_num + '7';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn7">7</button>
+        <button onclick="textbox_num = textbox_num + '8';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn8">8</button>
+        <button onclick=" textbox_num = textbox_num + '9';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn9">9</button>
+        <button onclick="textbox_num =  textbox_num + '0';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="btn10">0</button>
+        <button onclick="textbox_num = '';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="arith1">Clear</button>
+        <button onclick="textbox_num = textbox_num + '.';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="arith6">.</button>
+        <button onclick="textbox_num = textbox_num + '+';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="arith2">+</button>
+        <button onclick="textbox_num = textbox_num + '-';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="arith3">-</button>
+        <button onclick="textbox_num = textbox_num + '/';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="arith4">/</button>
+        <button onclick="textbox_num = textbox_num + '*';
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="arith5">x</button>
+
+        <button onclick="textbox_num = eval(textbox_num);
+        document.querySelector('#textbox').value = textbox_num;" class="cal_buttons" id="arith7">=</button>
+        </div>
+    </div>
+    <script>
+        let textbox_num = '';
+        document.querySelector('#textbox').value = textbox_num;
+    </script>
+</body>
+</html>
